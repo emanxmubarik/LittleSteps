@@ -1,1 +1,103 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+  <title>madebyeman</title> 
 
+  <!-- Fonts --> 
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+
+  <style> 
+    :root{ 
+      --ink:#1f2937; 
+      --muted:#5b6472; 
+      --white:#ffffff; 
+      --pink:#ffd9e8; 
+      --peach:#ffe7d6; 
+      --lav:#e8e6ff; 
+      --accent:#f6b7cd; 
+      --accent2:#b7e4d8; 
+      --ring:#f0edf7; 
+      --shadow:0 18px 40px rgba(31,41,55,.12); 
+    }
+    header{ 
+      position: sticky; top:0; z-index:20; 
+      background:rgba(255,255,255,.8); 
+      backdrop-filter: blur(8px); 
+      border-bottom:1px solid var(--ring); 
+      padding: .9rem 1.25rem; 
+    } 
+    .nav{ 
+      max-width:1100px; margin:0 auto; 
+      display:flex; align-items:center; justify-content:space-between; 
+    } 
+    .brand{ 
+      font-weight:800; font-size:1.3rem; letter-spacing:.5px; 
+    } 
+    nav a{ 
+      text-decoration:none; font-weight:700; color:#3a3a3a; 
+      padding:.5rem .8rem; border-radius:10px; 
+      transition: all .2s ease; 
+    } 
+    nav a:hover{ background: #fff; box-shadow: 0 6px 14px rgba(31,41,55,.08); } 
+
+    main{ max-width:900px; margin: 3rem auto; padding: 0 1.25rem; } 
+
+    .title{ 
+      text-align: center; 
+      font-family:'Playfair Display', serif; 
+      font-size: clamp(2rem, 4.5vw, 3rem); 
+      line-height:1.1; margin:.1rem 0 .75rem; 
+    } 
+
+    .inner-page{ 
+      padding: 2rem; 
+      background: #bed0e2; 
+    } 
+    .tile{ 
+      background:#fff; border:1px solid var(--ring); border-radius:16px; padding:1.2rem 1.25rem; 
+      display:flex; align-items:center; justify-content:space-between; gap:1rem; 
+      box-shadow: 0 12px 26px rgba(31,41,55,.08); text-decoration:none; color:inherit; 
+      transition: transform .08s ease, box-shadow .2s ease; 
+    } 
+
+    .lead { 
+      text-align: center; 
+    } 
+
+    footer{ 
+      margin-top:3rem; background:rgba(255,255,255,.8); 
+      backdrop-filter: blur(6px); 
+      border-top:1px solid var(--ring); text-align:center; color:#6b7280; font-size:.95rem; padding:1rem; 
+    } 
+  </style> 
+</head> 
+<body> 
+
+  <header> 
+    <div class="nav"> 
+      <div class="brand">Little Steps</div> 
+      <nav> 
+        <a href="index.html">Home</a> 
+        <a href="about.html">About Us</a> 
+        <a href="projects.html">Get Involved</a> 
+        <a href="writing.html">Blog</a> 
+        <a href="contact.html">Contact Us</a>
+      </nav> 
+    </div> 
+  </header> 
+
+  <main> 
+    <div class="inner-page"> 
+      <h1 class="title"></h1> 
+      <p class="lead"></p> 
+    </div> 
+  </main> 
+
+  <footer> 
+    &copy; Little Steps — All rights reserved. 
+  </footer> 
+
+</body> 
+</html>
