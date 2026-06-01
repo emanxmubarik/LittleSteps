@@ -43,6 +43,65 @@
       box-shadow: 0 6px 14px rgba(0, 0, 0, .08); 
     } 
 
+      .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background: white;
+  min-width: 220px;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background: #e60000;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    .contact-btn {
+  border: 2px solid #e60000;
+  color: #e60000;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.contact-btn:hover {
+  background: #e60000;
+  color: white;
+}
+
+.donate-btn {
+  background: #e60000;
+  color: white !important;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: .6rem 1rem;
+}
+
+.donate-btn:hover {
+  background: #cc0000;
+}
+      
     main{ 
       max-width:900px; 
       margin: 3rem auto; 
@@ -95,20 +154,54 @@
     <div class="nav"> 
       <div class="brand">Little Steps</div> 
       <nav> 
-        <a href="index.html">Home</a> 
-        <a href="about.html">About Us</a> 
-        <a href="involve.html">Get Involved</a> 
-        <a href="blog.html">Blog</a> 
-        <a href="contact.html">Contact Us</a>
+        <a href="index.html">Home</a>
+        
+        <div class="dropdown">
+    <a href="#">About Us ▼</a>
+
+    <div class="dropdown-content">
+      <a href="about.html">Our Story</a>
+      <a href="team.html">Our Team</a>
+      <a href="mission.html">Mission & Vision</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">Get Involved ▼</a>
+
+    <div class="dropdown-content">
+      <a href="donate.html">Donate</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="events.html">Collaborations</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">Media ▼</a>
+
+    <div class="dropdown-content">
+      <a href="news.html">Articles</a>
+      <a href="stories.html">Success Stories</a> <!-- past events might be a better name? -->
+    </div>
+  </div>
+        <a href="contact.html" class="contact-btn">
+    Contact Us
+  </a>
+
+  <a href="https://gofundme.com/YOUR-LINK"
+     target="_blank"
+     class="donate-btn">
+     Donate
+  </a>
       </nav> 
     </div> 
   </header> 
 
   <main> 
-    <h1 class="title">Welcome to Little Steps</h1>
-    <!-- Content will go here -->
+    <h1 class="title">Welcome to Little Steps</h1> <!-- need to add the picture, a little about me section, link to some media stuff, contact us at the bottom  -->
   </main> 
 
+  
   <footer> 
     &copy; Little Steps — All rights reserved. 
   </footer> 
