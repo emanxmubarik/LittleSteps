@@ -146,6 +146,25 @@ nav a:hover{
   background:#cc0000;
 }
 
+.learn-btn{
+    display:inline-block;
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:700;
+    font-size:1rem;
+    transition:all .3s ease;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.learn-btn:hover{
+    background:#cc0000;
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
 .coverimage{
   width:95%;
   height:650px;
@@ -288,8 +307,13 @@ footer{
 <!-- Cover Image -->
 
   <section class="coverimage">
-    <img src="coverimage.png" alt="Little Steps Cover Image">
-  </section>
+    <div class="hero-content">
+        <h1>Taking Small Steps Toward Big Change</h1>
+        <a href="mission.html" class="learn-btn">
+            Learn More
+        </a>
+    </div>
+</section>
 
 <!-- What We Do/About Us -->
 
